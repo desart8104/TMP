@@ -1,0 +1,7 @@
+@startuml
+node ClientNode as "Клиент" {
+node ClientOS as "ОС"{
+    node TextRed as "Текстовый редактор"
+}
+}
+@enduml

@@ -1,0 +1,24 @@
+@startuml
+
+actor "Пользователь" as User
+
+package "Текстовый редактор" {
+usecase "Открыть файл" as D1
+usecase "Редактировать файл" as D2
+usecase "Печатать файл" as D3
+usecase "Создать файл" as D4
+usecase "Открыть специальный формат" as D5
+usecase "Подсветка ключ.сл." as D6
+usecase "Сохранить файл" as D7
+usecase "Закрыть файл" as D8
+}
+
+User -- D1
+User -- D2
+User -- D3
+User -- D4
+User -- D5
+D5 -- D6
+User -- D7
+User -- D8
+@enduml
